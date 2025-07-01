@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>BMI Calculator</h1>
+            <p>Calculate your Body Mass Index</p>
+        </header>
+        <main>
+            <form id="bmi-form" class="bmi-form">
+                <div class="input-group">
+                    <label for="height">Height</label>
+                    <div class="input-row">
+                        <input type="number" id="height" placeholder="Enter height" step="0.1" required>
+                        <select id="height-unit">
+                            <option value="cm">cm</option>
+                            <option value="ft-in">ft & in</option>
+                        </select>
+                    </div>
+                    <div id="height-inches" class="inches-input" style="display: none;">
+                        <input type="number" id="feet" placeholder="Feet" min="0" max="10">
+                        <input type="number" id="inches" placeholder="Inches" min="0" max="11">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="weight">Weight</label>
+                    <div class="input-row">
+                        <input type="number" id="weight" placeholder="Enter weight" step="0.1" required>
+                        <select id="weight-unit">
+                            <option value="kg">kg</option>
+                            <option value="lbs">lbs</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="calculate-btn">Calculate BMI</button>
+            </form>
+            <div id="result" class="result-container" style="display: none;">
+                <div class="result-card">
+                    <h2>Your BMI Result</h2>
+                    <div class="bmi-value">
+                        <span id="bmi-number">0</span>
+                    </div>
+                    <div class="bmi-category">
+                        <span id="bmi-status">Normal</span>
+                    </div>
+                    <div class="bmi-message">
+                        <p id="bmi-description">You have a healthy weight!</p>
+                    </div>
+                    <button id="recalculate" class="recalculate-btn">Calculate Again</button>
+                </div>
+            </div>
+    <script src="script.js"></script>
+</body>
+</html>
