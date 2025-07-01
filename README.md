@@ -25,23 +25,6 @@ flowchart TD
 ```
 
 ---
-
-## 📋 Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [How It Works](#how-it-works)
-- [Live Demo](#live-demo)
-- [Installation](#installation)
-- [Usage](#usage)
-- [BMI Categories](#bmi-categories)
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
-- [Developer](#developer)
-
----
-
 ## 🎯 Overview
 
 The **BMI Calculator** is a visually appealing, responsive web application that lets users calculate their Body Mass Index (BMI) using either metric or imperial units. It displays the BMI result, category, and personalized health messages, all wrapped in a modern and accessible UI.
